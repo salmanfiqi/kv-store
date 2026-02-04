@@ -23,7 +23,7 @@ public class KVClient {
         PrintWriter out = new PrintWriter(socket.getOutputStream(), true);
         
         // send command
-        out.write(command);
+        out.println(command);
 
         // read response & close
         String response = in.readLine();
