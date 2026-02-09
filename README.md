@@ -21,19 +21,19 @@ This implementation is guided by foundational research and production system des
 ### Core Papers & Books
 
 **Primary References:**
-- **Designing Data-Intensive Applications by Martin Kleppmann
+- Designing Data-Intensive Applications by Martin Kleppmann
   - Chapter 5: Replication (focus on leaderless replication)
   - Chapter 6: Partitioning (consistent hashing, virtual nodes)
   - Chapter 7: Transactions (conflict resolution, vector clocks)
   
-- **Dynamo: Amazon's Highly Available Key-value Store
+- Dynamo: Amazon's Highly Available Key-value Store
   - Section 4: System Architecture
   - Section 4.3: Replication
   - Section 4.4: Data Versioning (vector clocks)
   - Section 4.7: Handling Failures (hinted handoff, read repair)
 
 **Implementation References:**
-- **Project Voldemort Design
+- Project Voldemort Design
   - LinkedIn's production Dynamo-inspired system
   - Consistent hashing implementation
   - Vector clock implementation
@@ -42,11 +42,11 @@ This implementation is guided by foundational research and production system des
 ### Consensus & Distributed Systems Background
 
 **Understanding Raft (for context, NOT used in this project):**
-- **The Secret Lives of Data - Raft Visualization
+- The Secret Lives of Data - Raft Visualization
   - Interactive visualization of leader-based consensus
   - Useful for understanding the *alternative* approach (leader-based vs leaderless)
   
-- **Raft Paper
+- Raft Paper
   - Understanding strong consistency and leader election
   - Contrast with our eventual consistency model  
 
