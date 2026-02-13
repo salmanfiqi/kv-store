@@ -49,7 +49,9 @@ public class KVServer {
     }
 
     public static void main(String[] args) throws IOException {
-        KVServer server = new KVServer(8080);
+        int port = args.length > 0 ? Integer.parseInt(args[0]) : 8080;
+        KVServer server = new KVServer(port);
+        System.out.println("Server starting on port " + port);
         server.start();
     }
 }
